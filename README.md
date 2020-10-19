@@ -48,7 +48,7 @@ La primera parte del tutorial es en python. Si seguiste las instrucciones para i
 
 En esta parte del tutorial se lleva a cabo la descarga, manipulación, análisis y procesamiento de los datos. No te la saltes!
 
-[Enlace a la parte de python del tutorial]()
+[Enlace a la parte de python del tutorial](https://nbviewer.jupyter.org/github/irvingfisica/taller01/blob/master/taller_python.ipynb)
 
 ## Visualización de datos en la web
 
