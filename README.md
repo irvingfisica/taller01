@@ -41,3 +41,15 @@ Jupyter Lab se ejecutará en una pestaña de tu explorador. Veras una pantalla s
 ![Jupyter Lab](./imagenes/img1.png).
 
 Para comenzar un nuevo notebook basta con dar click en el boton "python 3" bajo la sección de Notebooks. 
+
+## Manejo de datos en python
+
+La primera parte del tutorial es en python. Si seguiste las instrucciones para instalarlo en tu sistema puedes encontrar la parte de python en el archivo "taller_python.ipynb" en este repositorio. Te recomiendo que no solo lo leas, codéalo! No hay manera de aprender a analizar, manipular y visualizar datos si no es haciendolo. El archivo puedes abrirlo en el enlace, leerlo e ir tecleando las partes de código en tu propio jupyter notebook.
+
+En esta parte del tutorial se lleva a cabo la descarga, manipulación, análisis y procesamiento de los datos. No te la saltes!
+
+[Enlace a la parte de python del tutorial]()
+
+## Visualización de datos en la web
+
+Aquí irá la descripción del proyecto en la versión web.
