@@ -40,7 +40,13 @@ Jupyter Lab se ejecutará en una pestaña de tu explorador. Veras una pantalla s
 
 ![Jupyter Lab](./imagenes/img1.png).
 
-Para comenzar un nuevo notebook basta con dar click en el boton "python 3" bajo la sección de Notebooks. 
+Para comenzar un nuevo notebook basta con dar click en el boton "python 3" bajo la sección de Notebooks.
+
+También existen otras maneras de usar lo Notebooks de Jupyter en otros ambientes, por ejemplo con el editor de texto [VSCode](https://code.visualstudio.com/). Solamente necesitas descargarlo e instalar el complemento para python. Una vez que lo abras e instales el complemento puedes abrir un nuevo notebook desde la pantalla de bienvenida al complemento o presionando Ctrl+Shift+P, buscando python en el cuadro de texto disponible y seleccionando: "Python, create new blank jupyter notebook". 
+
+De cualquiera de las dos maneras tendrás un Notebook nuevecito para trabajar, con una celda disponible. A medida que vayas escribiendo y ejecutando código en esta celda aparecerá el resultado de la ejecución y una nueva celda para seguir trabajando.
+
+La siguiente parte del tutorial tendrás que teclearla en el notebook que acabas de crear.
 
 ## Manejo de datos en python
 
