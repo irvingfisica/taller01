@@ -1,7 +1,5 @@
 # Taller de visualización de datos, "Visualizando datos de COVID-19"
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/irvingfisica/taller01/master)
-
 El objetivo de este taller es mostrar como se va construyendo una visualización de datos interactiva en la web. 
 
 El taller consta de las siguientes partes:
@@ -58,4 +56,63 @@ En esta parte del tutorial se lleva a cabo la descarga, manipulación, análisis
 
 ## Visualización de datos en la web
 
-Aquí irá la descripción del proyecto en la versión web.
+Una vez que generamos nuestro archivo de datos podemos continuar con el tutorial. 
+
+La siguiente parte del tutorial mostrará como armar una visualización de datos básica en la web. Para trabajar en la web necesitamos otro tipo de tecnologías diferentes a las usadas hasta ahora. Esencialmente necesitaremos montar una página web y generar contenido gráfico en ella. la creación de páginas web involucra la mezcla de diversas tecnologías, usaremos:
+
+* HTML, para construir la estructura básica de la página web
+* CSS, para estilizar la página web
+* SVG, para pintar elementos gráficos en nuestra página web
+* JavaScript, para controlar la parte dinámica y los datos de nuestra página web.
+
+Ninguna de estas tecnologías se ven a fonde en este tutorial. Si te interesa hacer visualización de datos en la web deberías en el futuro aprender mucho más de esos 4 temas. El objetivo del tutorial solamente es mostrar los pasos básicos para empezar en este mundo.
+
+En esta parte del tutorial crearemos un proyecto web. Necesitaras un editor de texto para editar tu código. Te recomiendo alguno de los siguientes: [VScode](https://code.visualstudio.com/), [Sublime](https://www.sublimetext.com/), [Atom](https://atom.io/). También necesitarás tu explorador web, en el usaremos las herramientas de desarrollador por lo cual te recomiendo que utilices [Firefox](https://www.mozilla.org/en-US/firefox/new/) o [Chrome](https://www.google.com/chrome/).
+
+## Creando la estructura de nuestro proyecto
+
+Los proyectos web se componen de muchos archivos. Es importante tener una estructura adecuada para organizarlos. La estructura aquí sugerida no es la única existente, hay muchas más, es simplemente la que a mi me funciona. 
+
+Es necesario que crees una carpeta para guardar tu proyecto, yo la llamé *dataviz*, crea en ella tres subcarpetas llamadas:
+
+```.
+dataviz
+|
+├── css
+├── js         
+└── datos                 
+```
+En la carpeta de datos copiaremos el archivo de datos que procesamos en la parte de python de este tutorial.
+
+Después en nuestro editor crearemos un nuevo archivo en la carpeta principal del proyecto. A este archivo lo llamaremos *index.html*. Este archivo será el archivo principal de nuestra página web. En el haremos un documento html que se traducirá en una pagina web al abrirlo en nuestro explorador.
+
+## El documento html
+
+En este archivo pondremos el siguiente código html:
+
+```.
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Taller de Visualización COVID19</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+Hay varias cosas importantes en este código: 
+* Con la primera línea indicamos que el tipo de documento es un documento html
+
+* Los documentos html se componen de *tags*. En la segunda línea del código podemos ver el *tag* principal **\<html>** abrir y cerrar en la última línea **\</html>**. La mayoría de los tags de html abren y cierran porque pueden contener otros tags dentro. Usualmente la metáfora que se escoge es la de cajas donde un tag es una caja que contiene a otras cajas o la de un arbol donde un tag es una rama de la cual crecen otras ramas.
+
+* Dentro del *tag* **\<html>\</html>** tenemos dos tags que son importantes:
+    - El tag **\<head>\</head>** o cabeza del documento en donde pondremos información referente al documento, por ejemplo el *tag* \<meta> que indica meta-información relacionada con el sitio. En este caso se usa para indicar que el encoding a utilizar en el documento es "UTF-8".
+
+    - El tag **\<body>\</body>** o cuerpo del documento en el cual colocaremos todos los tags que tengan contenido para ser presentado en nuestra página.
+
+* Dentro del *tag* **\<head>\</head>** tenemos otro tag, el tag **\<title>\</title>** el cual tiene en su interior el texto "Taller de Visualización COVID19". Muchos tags llevan texto dentro, en este caso el tag nos sirve para ponerle título a nuestro documento. El título no se muestra en el cuerpo del documento, usualmente los exploradores lo muestran en la pestaña del documento. 
+
+Si guardamos el documento puedes abrirlo en tu explorador. Deberías de obtener solamente una página en blanco. Si te fijas en la pestaña o en la ventana de tu explorador el título se mostrará arriba usualmente.
